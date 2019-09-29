@@ -1,0 +1,38 @@
+.custom-table {
+  &__head, &__row {
+    display: grid;
+    grid-template-columns: 9% 18% 9% 15% 16% 19% 16%;
+  }
+  .empty-file-icon{
+    width: 12px;
+    height: 15px;
+  }
+  &__row{
+    color: rgba(0,0,0,0.8);
+  }
+  .font-12{
+    font-size: 12px;
+  }
+
+  .link-text{
+    font-family: 'Inter-Medium', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+  }
+
+  .gray-light-text{
+    display: flex;
+  }
+}
+
+.page-title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cost-col{
+  display:flex;
+  span{
+    margin-left: 6px;
+  }
+}

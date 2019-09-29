@@ -1,0 +1,154 @@
+.users-table{
+  border: 1px solid rgba(35, 138, 196, 0.2);
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 100%;
+  border-collapse: collapse;
+
+  font-family: 'Inter-Regular', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+  .photo-column {
+    width: 9%;
+    text-align: left;
+    box-sizing: border-box;
+    img{
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+    }
+  }
+  .id-column {
+    width: 5%;
+  }
+  .name-column {
+    width: 35%;
+  }
+  .user-name {
+    font-family: 'Inter-Medium', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .email-column {
+    width: 27%
+  }
+  .phone-column{
+    width: 16%;
+  }
+  .gray-text{
+    font-size: 12px;
+  }
+  .expand-column{
+    padding: 0;
+    .expand-icon{
+      width: 12px;
+      height: 6px;
+      margin: 30px 30px;
+    }
+  }
+  &__header{
+    height: 56px;
+    display: flex;
+    div{
+      padding: 21px 0 20px 0
+    };
+  }
+  &__row{
+    &:nth-child(even){
+      background: rgba(35, 138, 196, 0.03);
+    }
+    cursor: pointer;
+  }
+  &__short{
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    &>div{
+      padding: 23px 0 20px 0;
+      &:first-child{
+        padding: 12px 0 0 24px;
+      }
+    };
+  }
+  &__details{
+    padding: 27px 0px 17px 24px;
+    display: flex;
+    justify-content: space-between;
+    .photo{
+      width: 90px;
+      height: 90px;
+      border-radius: 100%;
+      margin-right: 25px;
+    }
+    .info{
+      width: 80%;
+      .top-line{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        .user-id{
+          margin-right: 28px;
+          font-size: 12px;
+        }
+        .user-name{
+          font-size: 16px;
+        }
+        .user-links{
+          font-family: 'Inter-Medium', Helvetica, Arial, sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          .gray-text{
+            font-size: 14px;
+          }
+          a:first-child{
+            margin-right: 20px;
+          }
+        }
+      }
+      .black-text{
+        font-size: 14px;
+      }
+      .contacts-line{
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        &__right{
+          display: flex;
+          justify-content: space-between;
+          .user-phone{
+            margin-right: 32px;
+            display: flex;
+            span{
+              max-width: 200px;
+              overflow: hidden;
+              display: inline-block;
+            }
+          }
+        }
+      }
+      .user-misc{
+        margin: 8px 0 11px;
+        word-wrap: break-word;
+        p{
+          margin: 0;
+        }
+      }
+    }
+    .expand-column{
+      .expand-icon{
+        margin-top: 8px;
+      }
+    }
+  }
+
+}

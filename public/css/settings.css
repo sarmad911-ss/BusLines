@@ -1,0 +1,31 @@
+.grid-row {
+  grid-template-columns: repeat(12, 1fr);
+  display: grid;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+
+.grid-row .col__3 {
+  grid-column: span 3;
+}
+
+.grid-row .col__4 {
+  grid-column: span 4;
+}
+
+.grid-row .col__5 {
+  grid-column: span 5;
+}
+
+.grid-row .col__6 {
+  grid-column: span 6;
+}
+
+.grid-row .col__7 {
+  grid-column: span 7;
+}
+
+.grid-row .user-dob {
+  margin-left: 20px;
+}
+

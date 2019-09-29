@@ -1,0 +1,29 @@
+// NORMALIZER
+@import '~normalize.css';
+
+// Variables
+@import '../variables';
+
+@import "../ui";
+
+@import "../icons";
+
+.container{
+  width: 1170px;
+  max-width: 1170px;
+  margin: 0 auto;
+  display:flex;
+  min-height: 100vh;
+  background-image: url("/images/bus-image.png");
+  background-size: 69%;
+  background-position-x: 110%;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form-block{
+  margin-top: 55px;
+  max-width: 360px;
+}

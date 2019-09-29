@@ -1,0 +1,179 @@
+.custom-input__group input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.custom-input__group input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.custom-input__group input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.custom-input__group input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.custom-input__group input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.vector-arrow-icon {
+  margin: 15px;
+}
+
+.page-title {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.filter-block {
+  display: flex;
+  align-items: center;
+}
+
+.filter-block .custom-input__block,
+.filter-block .custom-input__block input,
+.filter-block .custom-select {
+  font-size: 12px !important;
+}
+
+.filter-block .custom-input__block {
+  margin-right: 13px;
+}
+
+.filter-block .custom-select__value {
+  padding-right: 13px;
+}
+
+.filter-block .date-block {
+  width: 125px;
+}
+
+.filter-block .date-block .vdp-datepicker input {
+  width: 55%;
+}
+
+.filter-block .status-block {
+  width: 150px;
+}
+
+.filter-block .status-block .custom-input__addon {
+  width: 10px;
+  min-width: 10px;
+}
+
+.filter-block .search-block {
+  width: 175px;
+  margin-right: 39px;
+}
+
+.filter-block .search-block .search-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.filter-block .button {
+  height: 45px;
+  box-sizing: border-box;
+}
+
+.custom-table__head,
+.custom-table__row {
+  display: grid;
+  grid-template-columns: 6% 6% 12% 20% 12% 13% 16% 15%;
+  padding-left: 0px;
+}
+
+.custom-table__head > div {
+  display: flex;
+  align-items: center;
+}
+
+.custom-table__head > div.sortable:hover {
+  color: #238AC4;
+  cursor: pointer;
+}
+
+.custom-table__head .sort {
+  margin-left: 5px;
+}
+
+.custom-table__head .sort .sort-icon {
+  width: 10px;
+  height: 6px;
+  background: rgba(35, 138, 196, 0.4);
+}
+
+.custom-table__head .sort .sort-icon.active {
+  background: #238ac4;
+}
+
+.custom-table__row {
+  color: rgba(0, 0, 0, 0.8);
+  word-wrap: break-word;
+}
+
+.custom-table__body {
+  font-size: 12px;
+  font-family: "Inter-Regular", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.8);
+  overflow-y: scroll;
+  max-height: 60vh;
+}
+
+.custom-table__body .link-text {
+  font-size: 12px;
+}
+
+.custom-table__body .bus-numbers {
+  display: flex;
+  align-items: center;
+}
+
+.custom-table__body .bus-numbers .numbers {
+  margin-right: 5px;
+}
+
+.custom-table__body .bus-numbers .numbers .bus-number {
+  margin: 1px 0;
+}
+
+.custom-table__body .bus-numbers .additional {
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(35, 138, 196, 0.2);
+  box-sizing: border-box;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.bus-number {
+  background: #FFFFFF;
+  border: 1px solid rgba(35, 138, 196, 0.2);
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Regular", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  color: #238AC4;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: 88px;
+  height: 28px;
+  min-height: 28px;
+  margin-right: 5px;
+}
+

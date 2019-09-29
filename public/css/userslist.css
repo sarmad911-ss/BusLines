@@ -1,0 +1,185 @@
+.users-table {
+  border: 1px solid rgba(35, 138, 196, 0.2);
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Inter-Regular", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.users-table .photo-column {
+  width: 9%;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.users-table .photo-column img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.users-table .id-column {
+  width: 5%;
+}
+
+.users-table .name-column {
+  width: 35%;
+}
+
+.users-table .user-name {
+  font-family: "Inter-Medium", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.users-table .email-column {
+  width: 27%;
+}
+
+.users-table .phone-column {
+  width: 16%;
+}
+
+.users-table .gray-text {
+  font-size: 12px;
+}
+
+.users-table .expand-column {
+  padding: 0;
+}
+
+.users-table .expand-column .expand-icon {
+  width: 12px;
+  height: 6px;
+  margin: 30px 30px;
+}
+
+.users-table__header {
+  height: 56px;
+  display: flex;
+}
+
+.users-table__header div {
+  padding: 21px 0 20px 0;
+}
+
+.users-table__row {
+  cursor: pointer;
+}
+
+.users-table__row:nth-child(even) {
+  background: rgba(35, 138, 196, 0.03);
+}
+
+.users-table__short {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.users-table__short > div {
+  padding: 23px 0 20px 0;
+}
+
+.users-table__short > div:first-child {
+  padding: 12px 0 0 24px;
+}
+
+.users-table__details {
+  padding: 27px 0px 17px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.users-table__details .photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  margin-right: 25px;
+}
+
+.users-table__details .info {
+  width: 80%;
+}
+
+.users-table__details .info .top-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.users-table__details .info .top-line .user-id {
+  margin-right: 28px;
+  font-size: 12px;
+}
+
+.users-table__details .info .top-line .user-name {
+  font-size: 16px;
+}
+
+.users-table__details .info .top-line .user-links {
+  font-family: "Inter-Medium", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.users-table__details .info .top-line .user-links .gray-text {
+  font-size: 14px;
+}
+
+.users-table__details .info .top-line .user-links a:first-child {
+  margin-right: 20px;
+}
+
+.users-table__details .info .black-text {
+  font-size: 14px;
+}
+
+.users-table__details .info .contacts-line {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.users-table__details .info .contacts-line__right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.users-table__details .info .contacts-line__right .user-phone {
+  margin-right: 32px;
+  display: flex;
+}
+
+.users-table__details .info .contacts-line__right .user-phone span {
+  max-width: 200px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.users-table__details .info .user-misc {
+  margin: 8px 0 11px;
+  word-wrap: break-word;
+}
+
+.users-table__details .info .user-misc p {
+  margin: 0;
+}
+
+.users-table__details .expand-column .expand-icon {
+  margin-top: 8px;
+}
+

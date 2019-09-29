@@ -1,0 +1,13 @@
+// NORMALIZER
+@import '~normalize.css';
+
+// Variables
+@import '../variables';
+
+@import "../ui";
+
+@import "../icons";
+
+.container{
+  padding: 50px 50px 0px 50px;
+}

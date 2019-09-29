@@ -1,0 +1,143 @@
+.custom-input__group{
+  input{
+    &::placeholder{
+      color:rgba(0,0,0,0.4);
+    }
+  }
+}
+
+.vector-arrow-icon{
+    margin: 15px;
+}
+
+.page-title{
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.filter-block{
+  display: flex;
+  align-items: center;
+  .custom-input__block, .custom-input__block input, .custom-select{
+    font-size: 12px !important;
+  }
+  .custom-input__block{
+    margin-right: 13px;
+  }
+  .custom-select__value{
+    padding-right: 13px;
+  }
+  .date-block{
+    width:125px;
+    .vdp-datepicker input{
+      width: 55%;
+    }
+  }
+  .status-block{
+    width: 150px;
+    .custom-input__addon{
+      width: 10px;
+      min-width: 10px;
+    }
+  }
+  .search-block{
+    width: 175px;
+    margin-right: 39px;
+    .search-icon{
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .button{
+    height: 45px;
+    box-sizing: border-box;
+  }
+}
+
+.custom-table{
+  &__head, &__row{
+    display: grid;
+    grid-template-columns: 6% 6% 12% 20% 12% 13% 16% 15%;
+    padding-left: 0px;
+  }
+  &__head{
+    &>div{
+      display: flex;
+      align-items: center;
+      &.sortable:hover{
+        color:#238AC4;
+        cursor: pointer;
+      }
+    }
+    .sort{
+      margin-left: 5px;
+      .sort-icon{
+        width: 10px;
+        height: 6px;
+        background: rgba(35, 138, 196, 0.4);
+        &.active{
+          background: rgba(35, 138, 196, 1);
+        }
+      }
+    }
+  }
+  &__row{
+    color: rgba(0, 0, 0, 0.8);
+    word-wrap: break-word;
+  }
+  &__body{
+    font-size: 12px;
+    font-family: 'Inter-Regular', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.8);
+    overflow-y: scroll;
+    max-height: 60vh;
+    .link-text{
+      font-size: 12px;
+    }
+    .bus-numbers{
+      display: flex;
+      align-items: center;
+      .numbers{
+        margin-right: 5px;
+        .bus-number{
+          margin:1px 0;
+        }
+      }
+      .additional{
+        border-radius: 100%;
+        width: 24px;
+        height: 24px;
+        border: 1px solid rgba(35, 138, 196, 0.2);
+        box-sizing: border-box;
+        background: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        color:rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
+
+.bus-number{
+  background: #FFFFFF;
+  border: 1px solid rgba(35, 138, 196, 0.2);
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter-Regular', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  color: #238AC4;
+  width: max-content;
+  min-width: 88px;
+  height: 28px;
+  min-height: 28px;
+  margin-right: 5px;
+}

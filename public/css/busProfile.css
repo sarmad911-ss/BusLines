@@ -1,0 +1,122 @@
+.page-title {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.gray-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.container .page-content {
+  padding-top: 28px;
+}
+
+.tabs {
+  justify-content: space-between;
+}
+
+.tabs .links-block {
+  display: flex;
+  font-family: "Inter-Medium", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.tabs .links-block span {
+  cursor: pointer;
+  display: flex;
+  margin-right: 26px;
+}
+
+.tabs .links-block span .icon {
+  margin-right: 10px;
+}
+
+.info-table {
+  font-family: "Inter-Medium", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 31px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: grid;
+}
+
+.info-table__row {
+  display: flex;
+  height: 28px;
+  align-items: center;
+}
+
+.info-table__row.subrow {
+  padding-left: 24px;
+}
+
+.info-table__row > div:first-child {
+  width: 115px;
+}
+
+.info-table__splitter {
+  height: 9px;
+}
+
+.last-update {
+  text-align: right;
+}
+
+.bus-misc {
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+  word-wrap: break-word;
+}
+
+.info-tab {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.info-tab .layout-container {
+  grid-column: span 8;
+}
+
+.dates-tab {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.dates-tab .layout-container {
+  grid-column: span 7;
+  display: grid;
+  grid-template-columns: repeat(3, 205px);
+}
+
+.dates-tab .custom-input__group {
+  width: 181px;
+  min-width: 181px;
+  margin-right: 25px;
+}
+
+.dates-tab .row {
+  grid-column: span 12;
+}
+
+.docs-tab {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+}
+

@@ -1,0 +1,13 @@
+.roadmap-tab{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
+  grid-column-gap: 25px;
+
+  .map-column{
+    grid-column: span 5;
+  }
+
+  .waypoints-column{
+    grid-column: span 7;
+  }
+}

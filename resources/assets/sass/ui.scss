@@ -1,0 +1,560 @@
+
+.logo {
+  height: 45px;
+  width: 175px;
+  user-select: none;
+  pointer-events: none;
+  user-drag: none;
+}
+
+.form-title {
+  font-family: $Inter-SemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 12px;
+}
+
+.form-subtitle {
+  font-family: $Inter-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 14px;
+}
+
+.custom-input {
+  &__block {
+    margin: 11px 0;
+
+    &.big {
+      .custom-input__group {
+        height: 50px;
+
+        input {
+          font-size: 30px;
+          color: $main-color;
+          font-weight: 600;
+          font-family: $Inter-SemiBold;
+          &::placeholder{
+            color: rgba(0,0,0,0.6);
+          }
+        }
+      }
+    }
+
+  }
+
+  &__label {
+    font-family: $Inter-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    .gray-text {
+      font-size: 12px;
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  &__group {
+    display: flex;
+    height: 45px;
+    border: 1px solid $light-blue;
+    box-sizing: border-box;
+    border-radius: 8px;
+    align-items: center;
+
+    input {
+      margin-left: 15px;
+      width: 95%;
+      border: none;
+      background: none;
+      font-family: $Inter-Regular;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      outline: none;
+      &::placeholder{
+        color: rgba(0,0,0,0.6)
+      }
+    }
+
+    //input[type=number]::-webkit-inner-spin-button {
+    //-webkit-appearance: none;
+    //-moz-appearance: none;
+    //appearance: none;
+    //margin: 0;
+    //}
+  }
+
+  &__addon {
+    width: 45px;
+    min-width: 45px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.left {
+      border-right: 1px solid $light-blue;
+    }
+
+    &.right {
+      border-left: 1px solid $light-blue;
+    }
+
+    &.arrows {
+      display: flex;
+      flex-direction: column;
+      width: 30px;
+      min-width: 30px;
+      max-width: 30px;
+
+      div {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:first-child {
+          border-bottom: 1px solid $light-blue;
+        }
+
+        .icon {
+          width: 8px;
+        }
+      }
+    }
+  }
+
+  %__after {
+
+  }
+}
+
+.button {
+  font-family: $Inter-Medium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  background: $main-color;
+  color: #FFFFFF;
+  border-radius: 8px;
+  padding: 14px 30px;
+  border: none;
+  outline: none;
+  margin: 25px 0;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover{
+    background-color: #3CA3DC;
+  }
+  &:active{
+    background: #1D74A4;
+  }
+  &.light{
+    background: rgba(35, 138, 196, 0.2);
+    color: $main-color;
+    &:hover{
+      background-color: #3CA3DC;
+      color: #ffffff;
+    }
+    &:active{
+      background-color: rgba(35, 138, 196, 0.05);;
+      color: #1D74A4;
+    }
+  }
+  &.disabled{
+    background: rgba(0, 0, 0, 0.35);
+    color: #FFFFFF;
+    cursor: default;
+    &:hover{
+      background: rgba(0, 0, 0, 0.35);
+    }
+  }
+}
+
+.link-text {
+  font-family: $Inter-Medium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: $main-color;
+
+  .icon {
+    margin-right: 10px;
+  }
+}
+
+.page-title {
+  font-family: $Inter-SemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 35px;
+
+  .button{
+    float: right;
+    margin: 0px;
+  }
+}
+
+.big-blue-text {
+  font-family: $Inter-SemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 22px;
+  color: $main-color;
+}
+
+.gray-text {
+  color: rgba(0, 0, 0, 0.6);
+  .icon{
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-right: 10px;
+  }
+}
+.gray-light-text {
+  color: rgba(0, 0, 0, 0.4);
+  .icon{
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-right: 10px;
+  }
+}
+
+.blue-text {
+  color: $main-color;
+}
+
+.black-text {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.bold-text {
+  font-family: $Inter-SemiBold;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.saved-notification {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.01), 0px 0px 25px rgba(0, 0, 0, 0.01);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 24px 28px 25px 31px;
+  display: flex;
+  font-family: 'Inter-Regular', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.8);
+  width: 370px;
+  min-width: 370px;
+  max-width: 370px;
+  justify-content: space-between;
+  position: fixed;
+  left: 40vw;
+  bottom: 30px;
+  background-color: white;
+
+  .success-icon {
+    width: 19px;
+    height: 13px;
+  }
+
+  span {
+    width: 241px;
+    min-width: 241px;
+  }
+
+  .remove-icon {
+  }
+}
+
+//.ebatCursor {
+//  cursor: url('/images/redmarker.png'), auto !important;
+//}
+
+.custom-table {
+  border: 1px solid rgba(35, 138, 196, 0.2);
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 100%;
+  border-collapse: collapse;
+
+  font-family: $Inter-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+
+  &__head{
+    display: flex;
+    height: 56px;
+    align-items: center;
+    padding: 0px 25px;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  &__body {
+    box-sizing: border-box;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+      .empty-table{
+          font-size: 14px;
+          background: rgba(35, 138, 196, 0.03);
+          text-align: center;
+          padding: 20px;
+          cursor: default;
+      }
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    height: 75px;
+    padding: 0px 25px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    &:nth-child(odd) {
+      background: rgba(35, 138, 196, 0.03);
+    }
+    cursor: pointer;
+  }
+}
+
+.tabs{
+  border-bottom: 1px solid rgba(35, 138, 196, 0.2);
+  display: flex;
+  margin-bottom: 30px;
+  &__item{
+    font-family: $Inter-SemiBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-right: 38px;
+    cursor: pointer;
+    padding-bottom: 20px;
+    &.active{
+      color: $main-color;
+      border-bottom: 2px solid $main-color;
+    }
+    &.disabled{
+      color: rgba(0,0,0,0.4);
+      cursor: default;
+    }
+  }
+  &__container{
+    padding-bottom: 18px;
+  }
+}
+
+.vdp-datepicker{
+  .vdp-datepicker__calendar-button{
+    float:right;
+    .input-arrow-icon{
+      width: 8px;
+      height: 4px;
+      margin-right: 8px;
+      margin-top: 8px;
+    }
+  }
+  .remove-icon{
+    width: 11px;
+    height: 18px;
+    margin-top: -18px;
+    margin-left: 5px;
+  }
+  input{
+    width: 65%;
+    margin-left: 20px;
+  }
+}
+
+.custom-scroll{
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: white;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $main-color;
+    outline: 1px solid $main-color;
+  }
+}
+
+.vdatetime-time-picker__list{
+  color:black;
+  &::-webkit-scrollbar {
+    width: 5px !important;
+  }
+}
+
+.custom-input__group{
+  .vdatetime-input{
+    margin-left: 10px;
+  }
+}
+
+
+.noscroll{
+  overflow-y: hidden;
+}
+
+.elipsis{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.bus-number{
+  background: #FFFFFF;
+  border: 1px solid #238AC4;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Inter-Regular', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #238AC4;
+
+  width: fit-content;
+  padding: 0 12px;
+  min-width: 92px;
+  height: 28px;
+  min-height: 28px;
+
+  margin-right: 12px;
+}
+
+.modal__body {
+  .vdp-datepicker {
+    &.date-input{
+      position: unset;
+    }
+    &__calendar {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-height: max-content;
+      margin: auto;
+
+      &:before {
+        top: -100vh;
+        bottom: -100vh;
+        left: -100vw;
+        right: -100vw;
+        content: '';
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 200vw;
+        height: 200vh;
+        position: absolute;
+        z-index: -1;
+      }
+      & > div {
+        z-index: 200;
+        position: static;
+        background: white;
+      }
+    }
+  }
+}
+
+#DateTimePicker{
+  padding-top: 0;
+  margin: 0;
+  border: none !important;
+}
+
+.map-tooltip{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05), 0px 0px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  position: relative;
+  width: 316px;
+  top: -118px;
+  display: flex;
+  padding: 14px;
+  left: 23px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  .icon{
+    margin-right: 18px;
+  }
+}
+
+.radio-buttons{
+    border: 1px solid rgba(35, 138, 196, 0.2);
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: inline-block;
+    .button{
+        background: white;
+        color: $main-color;
+        margin: 1px;
+        &.selected{
+            background: #FFFFFF;
+            border: 1px solid #238AC4;
+            box-sizing: border-box;
+            border-radius: 8px;
+            margin: 0px;
+        }
+    }
+}
+
+.day-block{
+    width: 46px;
+    height: 48px;
+    font-family: $Inter-Regular;
+    font-size: 13px;
+    line-height: 22px;
+    border-radius:0 10px 10px 0;
+    background: rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    padding: 4px;
+
+    .day-name, .date{
+        color: #FFFFFF;
+        font-size: 12px;
+    }
+    &.past{
+        background: rgba(0, 0, 0, 0.2);
+    }
+    &.now{
+        background: #238AC4;
+    }
+    &.future{
+        background: rgba(35, 138, 196, 0.2);
+        .day-name{
+            color: #238AC4;
+        }
+        .date{
+            color: rgba(35, 138, 196, 0.8);
+        }
+    }
+}

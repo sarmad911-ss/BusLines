@@ -1,0 +1,54 @@
+.custom-table__head > :first-child,
+.custom-table__row > :first-child {
+  width: 13%;
+}
+
+.custom-table__head > :nth-child(2),
+.custom-table__row > :nth-child(2) {
+  width: 17%;
+}
+
+.custom-table__head > :nth-child(3),
+.custom-table__row > :nth-child(3) {
+  width: 30%;
+  word-wrap: break-word;
+}
+
+.custom-table__head > :nth-child(4),
+.custom-table__row > :nth-child(4) {
+  width: 12%;
+}
+
+.custom-table__head > :last-child,
+.custom-table__row > :last-child {
+  width: 20%;
+}
+
+.custom-table__head .link-text,
+.custom-table__row .link-text {
+  font-family: "Inter-Regular", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+.bus-number {
+  background: #FFFFFF;
+  border: 1px solid #238AC4;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Regular", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #238AC4;
+  padding: 0 12px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: 88px;
+  height: 28px;
+  min-height: 28px;
+}
+

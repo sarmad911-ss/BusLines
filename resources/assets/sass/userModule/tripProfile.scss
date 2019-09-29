@@ -1,0 +1,48 @@
+@import "../_variables.scss";
+
+.container .page-content{
+  padding-top: 28px;
+}
+
+.page-title{
+  display:flex;
+  justify-content: space-between;
+  .gray-text,.gray-light-text{
+    font-family: $Inter-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .gray-text{
+    margin-bottom: 6px;
+  }
+}
+
+.tabs{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  .links-block{
+    display: flex;
+    font-family: $Inter-Medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    .marker-icon{
+      width: 12px;
+      height: 17px;
+      margin-right: 10px;
+    }
+    span{
+      display: flex;
+      margin-right: 23px;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+}
+
+

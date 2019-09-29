@@ -1,0 +1,162 @@
+// NORMALIZER
+@import '../../../node_modules/normalize.css';
+
+
+// FONTS MIXIN IMPORT
+
+@import 'fontsMixin';
+
+// FONTS MIXIN GENERATION
+
+//@include font-face(Lato-Regular, fonts/Lato-Regular, null , null , ttf);
+//@include font-face(Lato-Light, fonts/Lato-Light, null , null , ttf);
+//@include font-face(Lato-Italic, fonts/Lato-Italic, null , null , ttf);
+//@include font-face(MuseoSans-SemiBold, fonts/MuseoSans-SemiBold, null , null , ttf);
+
+@include font-face(Inter-Regular, fonts/Inter-Regular, null,null, ttf);
+@include font-face(Inter-Medium, fonts/Inter-Medium, null,null, ttf);
+@include font-face(Inter-SemiBold, fonts/Inter-SemiBold, null,null, ttf);
+
+//FONTS MIXIN VARIABLES
+
+// Variables
+@import '_variables';
+
+//  UI ICONS
+@import "icons";
+
+@import "ui";
+
+@import "trymbowygFix";
+
+body{
+  font-family: $Inter-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgba(0,0,0,0.8);
+  &.no-scroll{
+    overflow: hidden;
+  }
+}
+
+.container{
+  display: flex;
+  .page-content{
+    padding: 50px;
+    width: 100%;
+    position: relative;
+  }
+  .sidebar-container{
+    background: #F6F6F7;
+    position: relative;
+    width: 220px;
+    min-width: 220px;
+    min-height: 100vh;
+    .sidebar{
+      width: 100%;
+      max-width: 220px;
+      min-height: 100vh;
+      max-height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      padding: 42px 36px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .logo{
+        height: auto;
+        width: 100%;
+      }
+      nav{
+        font-family: $Inter-SemiBold;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        a{
+          display: block;
+          margin: 16px 0;
+          color: rgba(0,0,0,0.6);
+          text-decoration: none;
+          &.active{
+            color: $main-color;
+            position: relative;
+            &::before{
+              left: -36px;
+              position: absolute;
+              content: "";
+              width: 3px;
+              background-color: $main-color;
+              border-radius: 100%;
+              height: 100%;
+            }
+          }
+
+        }
+      }
+      .user-block{
+        &__avatar{
+          border-radius: 100%;
+          border: 1px solid #238AC4;
+          min-width: 40px;
+          min-height: 40px;
+          max-width: 40px;
+          max-height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img{
+            width: calc(100% - 8px);
+            border-radius: 100%;
+          }
+        }
+        &__name{
+          font-family: $Inter-Medium;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 16px;
+          color: rgba(0, 0, 0, 0.8);
+          margin-top: 8px;
+        }
+        &__email{
+          font-family: $Inter-Regular;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+          color: rgba(0, 0, 0, 0.6);
+        }
+        &__logout{
+          font-family: $Inter-Medium;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 16px;
+          /* identical to box height */
+          color: rgba(0, 0, 0, 0.5);
+          display: flex;
+          text-decoration: none;
+          margin-top: 18px;
+          .icon{
+            background-color: rgba(0, 0, 0, 0.5);
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+

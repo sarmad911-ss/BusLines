@@ -1,0 +1,52 @@
+.grid-row {
+  grid-template-columns: repeat(12, 1fr);
+  display: grid;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.grid-row .col__5 {
+  grid-column: span 5;
+}
+
+.grid-row .col__3 {
+  grid-column: span 3;
+}
+
+.grid-row .col__4 {
+  grid-column: span 4;
+}
+
+.grid-row .col__7 {
+  grid-column: span 7;
+}
+
+.grid-row .user-dob {
+  margin-left: 20px;
+}
+
+.photo-loader {
+  display: flex;
+  margin-bottom: 17px;
+}
+
+.photo-loader input {
+  display: none;
+}
+
+.photo-loader img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-right: 22px;
+}
+
+.user-misc .trumbowyg-box,
+.user-misc .trumbowyg-editor {
+  min-height: 124px;
+}
+
+.vdatetime {
+  width: 100%;
+}
+
