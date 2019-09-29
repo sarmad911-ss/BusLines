@@ -43,7 +43,6 @@ class TripController extends Controller
         $trip->fillBuses($request->buses);
         $trip->fillServices($request->services_ids);
         $trip->fillConditions($request->conditions_ids);
-        session()->put("notification",'Изменения сохранены');
         return TripResource::make($trip);
     }
 
