@@ -96,6 +96,6 @@ class AuthController extends Controller
     {
         session()->forget('user');
         session()->save();
-        return redirect()->route('indexPage');
+        return redirect()->route('loginView');
     }
 }
